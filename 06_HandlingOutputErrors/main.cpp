@@ -6,7 +6,7 @@ int main() {
     std::ifstream archivo("mi_archivo.txt");
 
     // Verificar si el archivo se abrió correctamente
-    // good == (!fail() && !eof())
+    // good() == (!fail() && !eof())
     if (!archivo.fail() && !archivo.eof()) {
         std::cout << "El archivo se abrió correctamente." << std::endl;
         // Realizar operaciones con el archivo...
